@@ -1,4 +1,4 @@
-const notas = [6, 6, 6];
+const notas = [7, 7, 8];
 
 let media = (notas[0] + notas[1] + notas[2])/notas.length
 
