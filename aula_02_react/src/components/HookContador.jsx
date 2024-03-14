@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const HookContador = () => {
 
-    const [contador, setContador] = useState (1)
+    const [contador, setContador] = useState (1);
 
  function incrementarContador (){
     setContador(contador + 1);
