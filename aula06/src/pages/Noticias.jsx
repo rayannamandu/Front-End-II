@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const url = "http://localhost:3000/noticias"
 
-
 const Noticias = () => {
 
   const [noticias, setNoticias] = useState([])
@@ -25,13 +24,14 @@ const Noticias = () => {
         {
           noticias.map((noticia) => (
             <li key={noticia.id}>
-              <h2><Link to={`/visualizar-noticia/${noticia.id}`} > {noticia.titulo} </Link> </h2>
+              <h2><Link to={`/visualiza-noticia/${noticia.id}`}>{noticia.titulo}</Link></h2>
               <h3>{noticia.subtitulo}</h3>
             </li>
           ))
         }
       </ul>
-      </div>
+
+    </div>
   )
 }
 
